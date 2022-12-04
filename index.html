@@ -1,28 +1,30 @@
-<!DOCTYPE HTML>
+
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Flatiron Task Lister</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <div id="main-content">
-    <h1>Task Lister Lite™️</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My To Do List</title>
+        <script src="./index.js"></script>
+    </head>
 
-    <form id="create-task-form" action="" method="POST">
-      <label for="new-task-description">Task description:</label>
-      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
-    </form>
+    <body>
+        <div class="container">
+            <div id="todos">
+                <h3>ToDo List</h3>
+                <h4>Thursday</h4>
+                <form id="todo_form">
+                    <div class="field">
+                        <input id="new_todo" type="text" placeholder="New To Do"/>
+                        <input class="btn" type="submit" value="Submit"/>
+                    </div>
+                </form>
 
-    <div id="list">
-      <h2>My Todos</h2>
-      <ul id="tasks">
-      </ul>
-    </div>
-
-    <script src="./src/index.js"></script>
-  </div>
-
-</body>
+                <div id="todo_container">
+                    
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
